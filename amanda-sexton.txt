@@ -1,0 +1,116 @@
+https://codepen.io/asexton0713/pen/povvREo?editors=1100
+
+    1. What is Semantic HTML? 
+	Gives meaning to the html document.
+    2. What is HTML used for? 
+	The structure to a website.
+    3. What is an attribute and where do we put it? 
+	It makes the page funtionable. Used at the main beginning of the page.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+	For the most important text. Use it once as a headliner.
+    5. Name two tags that have required attributes
+	Class and ID tags.
+    6. What do we put in the head of our HTML document? 
+	Title, style, script.
+    7. What is an id? 
+	An individual value assigned to part of the page.
+    8. What elements can I add an id to? 
+	divs and sections
+    9. How many times can I use the same id on a page? 
+	Only once since the ID is for individual things.
+    10. What is a class? 
+	A group.
+    11. What elements can I add a class to? 
+	Any of them
+    12. How many times can I use the same class on a page? 
+	As many as you want
+    13. How do I get my link to open in a new tab?
+	Add target="_blank"
+    14. What is the alt attribute used for? 
+	If the original doesn't show up
+    15. How do I reference an id?
+	#id
+    16. What is the difference between a section and a div
+	A section is for a grouping and div is used to break down into sections.
+    17. What is CSS used for? 
+	Styling the website.
+    18. How to we select an element? Example - every h2 on the page
+	h2 {}
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	Example for class: You could use a class for a section or multiple sections to format them together, 
+		where as an ID could be used if you just wanted to style one specific element.
+    20. How do we select classes in CSS?
+	.class
+    21. How do we select a p element with a single class of “human””?
+	.human p{}
+    22. What is a parent child selector? When would this be useful? 
+	A parent selector lets you select a group but the child selector lets you style individual elements inside.
+		It would be helpful for separating the elements but wanted to keep them together.
+    23. How do you select all links within a div with the class of sidebar?
+	.sidebar a{}
+    24. What is a pseudo selector?
+	It specifies the state of an element.Like the :hover
+    25. What do we use the change the spacing between lines?
+	line-height:
+    26. What do we use to change the spacing between letters?
+	letter-spacing:
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	text-transform:
+    28. How do I add a 1px border around my div that is dotted and black?
+	border: 1px dotted black;
+    29. How do I select everything on the page? 
+	body {}
+    30. How do I write a comment in CSS?
+	/*comment here*/ or //
+    31. How do I find out what file I am in, when I am using the command line? 
+	It will be located after your user information.
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+	$ ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+	$git rm file.name , it is important to be careful because it completely removes from the computer with no way
+		to retrieve it.
+    34. Why should I use version control? 
+	In case something happens to your documents, you can revert back to a previous version.
+    35. How often should I commit to github?
+	After each change.
+    36. What is the command we would use to push our repo up to github? 
+	$ git push
+    37. Walk me through Lambda's git flow. 
+	-Fork the current project so that it shows your name.
+	-Go to settings, Collaborators to add your TL as a collaborator.
+	-Go back to the code and click the green button. When the dropdown pops up, copy the HTTPS clone code.
+	-Inside of Git Bash, use the cd command to go into the correct folder/destination you want to place the code.
+	-Use the git clone command and paste the url next to it, hit enter.
+	-Use cd command to go into the new folder.
+	-Use git checkout -b "firstname-lastname" command to create a branch.
+	-Do the assignment.
+	-When finished, use git add . to add the changes you made.
+	-Use git commit -m "Type a comment here of what you did"
+	-Use the git push -u origin branch-name to push the file onto Github.
+	-Go back onto Github into your forked project.
+	-Click on Branch:master button.
+	-In the drop-down, select your branch name.
+	-Click "New Pull Request"
+	-Click the dropdown button "base repository" and change to your forked repo.
+	-Write a more detailed version of what you did, if necessary. 
+	-Add your TL as a reviewer.
+	-Submit pull request.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+	A block element displays normally while an inline element only takes up what space is necessary. For example
+		if you have a div element as a block element and it's a paragraph, it would display normally. The 
+		inline element would be a span element to highlight a word.
+    2. What happens when an element is positioned absolutely? 
+	It has a fixed position. It makes other elements act like it doesn't exist.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+	You set the margin to auto.
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default.
+	Block: <div>, <p>, and <section> 
+	Inline: <span>, <img>, <a href="">
+	Inline-block: <nav>
+    5. In your own words, explain the box model. What is the fix for the box model? 
+	The box model is like a box that surrounds elements. It consists of margins, padding, and borders. You can manipulate each 
+	of these to be able to position your elements and add borders around them. The fix for the box model is box-sizing:border-box,
+	with this you can easily adjust your padding and margins more easily.
